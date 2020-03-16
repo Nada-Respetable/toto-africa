@@ -1,0 +1,67 @@
+/********** MADE BY AARON MARCO ARIAS, STYLES BASED ON CONTAINER.CSS, A WONDERFUL CSS BOILERPLATE WHICH I WHOLEHEARTEDLY RECOMMEND*********/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-weight: 400;
+    animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+ -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+ 0%   {background: black;}
+ 25%  {background: red;}
+ 50%  {background: darkred;}
+ 75%  {background: black;}
+ 100% {background: black;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0%   {background: black;}
+    25%  {background: red;}
+    50%  {background: darkred;}
+    75%  {background: black;}
+    100% {background: black;}
+  }
+  
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 0 1rem;
+    width: 100%;
+    position: relative;}
+    body {
+        background: #000000;
+        color: white;
+      }
+      a {
+        color:white;
+    text-decoration: underline;  
+    }
+      a:hover{
+          text-decoration: none;
+      }
+      h1{
+          text-transform: uppercase;
+      }
+
+      hr {
+        border-color: white;
+      }
+      iframe{
+          border: none;
+      }
+      .wojak{
+          max-width: 300px;
+          z-index: 1000;
+          margin-top: -50%;
+      }
